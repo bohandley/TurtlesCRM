@@ -1,0 +1,29 @@
+{
+  "name": "turtlescrm",
+  "version": "1.0.0",
+  "description": "Turtles all the way down",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bohandley/TurtlesCRM.git"
+  },
+  "keywords": [
+    "vue.js",
+    "rollup",
+    "crm",
+    "recursive",
+    "recursion"
+  ],
+  "author": "Brendan O'Handley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bohandley/TurtlesCRM/issues"
+  },
+  "homepage": "https://github.com/bohandley/TurtlesCRM#readme",
+  "dependencies": {
+    "rollup": "^1.17.0"
+  }
+}
