@@ -4,7 +4,9 @@
   "description": "Turtles all the way down",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon --inspect server.js",
+    "watch": "rollup --w -c rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,14 @@
   },
   "homepage": "https://github.com/bohandley/TurtlesCRM#readme",
   "dependencies": {
+    "@babel/core": "^7.5.5",
+    "eslint": "^4.12.1",
+    "express-vue": "^5.12.0",
+    "js-yaml": "^3.13.1",
     "rollup": "^1.17.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
   }
 }
