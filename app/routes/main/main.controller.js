@@ -5,7 +5,7 @@ module.exports = (router) => {
 
 		(req,res) => {
 			const data = {
-				turtles: "turtles"
+				title: "turtles"
 			};
 			req.vueOptions.head.title = "TurtlesCRM"; // build the html like therm-crm
 			res.renderVue("main/main.vue", data, req.vueOptions);

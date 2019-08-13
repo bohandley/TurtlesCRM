@@ -7,5 +7,9 @@ let app = express();
 Router.init(app, config);
 
 app.listen(config.port, () => {
-	console.log("Worker ${process.pid} running a ${config.env} server listening on port ${config.port}");
+	var pid = process.pid,
+		envmt = config.env,
+		prt = config.port;
+
+	console.log("Worker " + pid + " running a " + envmt + " server listening on port " + prt);
 });
