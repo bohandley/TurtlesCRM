@@ -1,6 +1,6 @@
 const express = require("express");
-const config =  require("/config");
-const Router = require("/router");
+const config =  require("./config");
+const Router = require("./router");
 
 let app = express();
 

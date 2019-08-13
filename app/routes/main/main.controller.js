@@ -1,7 +1,7 @@
-@param {object} = (router) => {
+module.exports = (router) => {
 	router.get("/",
-		@param {object} req
-		@param {object} res
+		// @param {object} req
+		// @param {object} res
 
 		(req,res) => {
 			const data = {

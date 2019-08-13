@@ -1,4 +1,4 @@
-const dotenv = require("dotenv"):
+const dotenv = require("dotenv");
 const Models = require("./models");
 
 let envFile = "development.env";
