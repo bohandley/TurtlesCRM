@@ -8,16 +8,17 @@ import VuePlugin from 'rollup-plugin-vue'
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-    input: 'src/main.js',
+    input: './app/routes/main/main.vue',
     output: {
-        file: 'public/bundle.js',
+        file: './app/routes/main/bundle.vue',
         format: 'iife', // immediately-invoked function expression — suitable for <script> tags
-        sourcemap: true
+        sourcemap: true,
+        name: 'turltes'
     },
     plugins: [
         resolve(), // tells Rollup how to find date-fns in node_modules
         commonjs(), // converts date-fns to ES modules
-        production && terser() // minify, but only in production
+        production && terser(), // minify, but only in production
         VuePlugin()
     ]
 };
